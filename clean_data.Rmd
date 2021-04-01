@@ -21,6 +21,8 @@ df
 
 
 ``` {r }
+str(df)
 df[!( is.na(df$x1) | df$x1=='null' | df$x1=="" ),]
+str(df)
 
 ```
