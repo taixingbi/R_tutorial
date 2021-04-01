@@ -1,0 +1,26 @@
+---
+title: 'hw3'
+author: "taixing bi"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+
+df <- data.frame(x1 = c(4, 1, NA, 7, 8, 1),    # Create example data
+                   x2 = c("A", NA, NA, "XX", "YO", "YA"),
+                   x3 = c(1, 0, NA, 1, 1, NA))
+df
+```
+
+
+
+``` {r }
+df[!( is.na(df$x1) | df$x1=='null' | df$x1=="" ),]
+
+```
